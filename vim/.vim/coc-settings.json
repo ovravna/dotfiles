@@ -1,0 +1,22 @@
+// vim:    ~/.vim/coc-settings.json
+// neovim: ~/.config/nvim/coc-settings.json
+{
+  "languageserver": {
+      "metals": {
+          "command": "metals-vim",
+          "rootPatterns": ["build.sbt"],
+	  "filetypes": ["scala", "sbt"]
+      },
+      "clangd": {
+        "command": "clangd",
+       "args": ["--background-index"],
+      "rootPatterns": ["compile_flags.txt", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+       "filetypes": ["c", "cpp", "objc", "objcpp"]
+     }
+},
+"python.linting.pylintEnabled": true,
+"python.linting.flake8Enabled": false,
+"python.linting.enabled": true
+}
+
+
