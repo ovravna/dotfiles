@@ -5,15 +5,17 @@ Dotfiles using GNU Stow
 Prerequisites: git stow 
 
 ```
-git clone git@github.com:ovravna/dotfiles.git
+cd ~
+git clone https://github.com/ovravna/dotfiles.git
 cd dotfiles
-stow *
+stow * [--adopt]
 ```
 
 ## Add program config
 ```
 cd ~/dotfiles
 mkdir <program>
-cp -r <program_configs> <program>
-stow --adopt <program>
+cd ~
+cp --parents <program_configs> dotfiles/<program>
+stow --adopt -vt ~ <program>
 ```
