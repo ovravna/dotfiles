@@ -1,0 +1,17 @@
+
+super + XF86AudioMute
+	playerctl play-pause
+
+super + F1
+	playerctl play-pause
+
+
+
+super + XF86Audio{LowerVolume,RaiseVolume}
+	playerctl {previous, next}
+
+super + {F2, F3}
+	playerctl {previous, next}
+
+
+
