@@ -56,6 +56,12 @@ set laststatus=2 " enable lightline?
 set noshowmode " dont show insert line
 let g:lightline = { 'colorscheme': 'seoul256', }
 
+" folding
+" set foldmethod=indent   
+" set foldnestmax=10
+" set nofoldenable
+" set foldlevel=2
+
 " Fzf
 let g:fzf_tags_command = 'ctags -R'
 " Mapping selecting mappings

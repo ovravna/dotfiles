@@ -13,9 +13,9 @@ stow * [--adopt]
 
 ## Add program config
 ```
-cd ~/dotfiles
-mkdir <program>
 cd ~
+mkdir dotfiles/<program>
 cp --parents <program_configs> dotfiles/<program>
+cd dotfiles
 stow --adopt -vt ~ <program>
 ```
